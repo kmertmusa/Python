@@ -1,0 +1,38 @@
+kitap_listesi = list()
+menu= """
+1) Kitap ekle
+2) Kitap çıkar
+3) Kitapları göster
+Q) Çıkış
+"""
+def ekle(kitap_listesi):
+    kit = input("Kitap giriniz:")
+    kitap_listesi += [kit]
+    print("Kitap eklendi")
+
+def cıkar():
+    print("a")
+
+
+while True:
+    print(menu)
+    a = input("İşlem numarası giriniz: ")
+    if a == "1":
+        ekle(kitap_listesi)
+
+
+    elif a == "2":
+        cıkar(kitap_listesi)
+
+    elif a == "3":
+
+        for a in kitap_listesi:
+            print("kitap adı: ",a)
+
+
+    elif a == "Q":
+        print("çıkış yapıldı")
+        quit()
+    else:
+        print("hatalı tuşlama")
+    input("menüye dönmek için entera basınız")
